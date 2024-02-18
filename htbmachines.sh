@@ -25,15 +25,15 @@ main_url="https://htbmachines.github.io/bundle.js"
 
 function helpPanel(){
     echo -e "\n${yellowColour}[+]${endColour}${grayColour} Uso de: ${endColour}${purpleColour}$0${endColour}"
-    echo -e "\t${purpleColour}u)${endColour}${grayColour} Descargar o actualizar archivos necesarios.${endColour}"
-    echo -e "\t${purpleColour}m)${endColour}${grayColour} Buscar por nombre de máquina.${endColour}"
-    echo -e "\t${purpleColour}i)${endColour}${grayColour} Buscar por dirección IP.${endColour}"
-    echo -e "\t${purpleColour}d)${endColour}${grayColour} Buscar por la dificultad de una máquina.${endColour}"
-    echo -e "\t${purpleColour}o)${endColour}${grayColour} Buscar por el Sistema Operativo.${endColour}"
-    echo -e "\t${purpleColour}c)${endColour}${grayColour} Buscar por el nivel de certificación.${endColour}"
-    echo -e "\t${purpleColour}s)${endColour}${grayColour} Buscar por alguna skill.${endColour}"
-    echo -e "\t${purpleColour}y)${endColour}${grayColour} Obtener link de la resolución de la máquina en Youtube.${endColour}"
-    echo -e "\t${purpleColour}h)${endColour}${grayColour} Mostrar este panel de ayuda.${endColour}"
+    echo -e "\t${blueColour}u)${endColour}${grayColour} Descargar o actualizar archivos necesarios.${endColour}"
+    echo -e "\t${blueColour}m)${endColour}${grayColour} Buscar por nombre de máquina.${endColour}"
+    echo -e "\t${blueColour}i)${endColour}${grayColour} Buscar por dirección IP.${endColour}"
+    echo -e "\t${blueColour}d)${endColour}${grayColour} Buscar por la dificultad de una máquina.${endColour}"
+    echo -e "\t${blueColour}o)${endColour}${grayColour} Buscar por el Sistema Operativo.${endColour}"
+    echo -e "\t${blueColour}c)${endColour}${grayColour} Buscar por el nivel de certificación.${endColour}"
+    echo -e "\t${blueColour}s)${endColour}${grayColour} Buscar por alguna skill.${endColour}"
+    echo -e "\t${blueColour}y)${endColour}${grayColour} Obtener link de la resolución de la máquina en Youtube.${endColour}"
+    echo -e "\t${blueColour}h)${endColour}${grayColour} Mostrar este panel de ayuda.${endColour}"
     exit 1
 }
 
