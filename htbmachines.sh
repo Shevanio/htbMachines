@@ -13,7 +13,7 @@ grayColour="\e[0;37m\033[1m"
 
 
 function ctrl_c(){
-    echo -e "\n\n${redColour}[!] Saliendo...\n${endcolourcat}"
+    echo -e "\n\n${redColour}[!] Saliendo...\n${endcolour}"
     tput cnorm && exit 1
 }
 
