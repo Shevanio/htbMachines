@@ -24,7 +24,7 @@ trap ctrl_c INT
 main_url="https://htbmachines.github.io/bundle.js"
 
 function helpPanel(){
-    echo -e "\n${yellowColour}[+]${endColour}${grayColour} Uso:${endColour}"
+    echo -e "\n${yellowColour}[+]${endColour}${grayColour} Uso de: ${endColour}${purpleColour}$0${endColour}"
     echo -e "\t${purpleColour}u)${endColour}${grayColour} Descargar o actualizar archivos necesarios.${endColour}"
     echo -e "\t${purpleColour}m)${endColour}${grayColour} Buscar por nombre de máquina.${endColour}"
     echo -e "\t${purpleColour}i)${endColour}${grayColour} Buscar por dirección IP.${endColour}"
