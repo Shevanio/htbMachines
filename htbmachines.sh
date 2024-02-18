@@ -211,5 +211,5 @@ elif [ $chivato_difficulty -eq 1 ] && [ $chivato_os -eq 1 ]; then
 elif [ $parameter_counter -eq 99 ]; then
   helpPanel
 else
-  echo -e "\n${yellowColour}[+]${endColour}${grayColour} Utiliza ${endColour}${purpleColour}-h${endColour}${grayColour} para el panel de ayuda.${endColour}"
+  echo -e "\n${yellowColour}[+]${endColour}${grayColour} Utiliza ${endColour}${blueColour}-h${endColour}${grayColour} para el panel de ayuda.${endColour}"
 fi
