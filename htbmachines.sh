@@ -34,6 +34,7 @@ function helpPanel(){
     echo -e "\t${purpleColour}s)${endColour}${grayColour} Buscar por alguna skill.${endColour}"
     echo -e "\t${purpleColour}y)${endColour}${grayColour} Obtener link de la resolución de la máquina en Youtube.${endColour}"
     echo -e "\t${purpleColour}h)${endColour}${grayColour} Mostrar este panel de ayuda.${endColour}"
+    exit 1
 }
 
 function updateFiles(){
@@ -185,7 +186,7 @@ while getopts "m:ui:y:d:o:c:s:h" arg; do
         o) os="$OPTARG"; chivato_os=1; let parameter_counter+=6;;
         c) cert="$OPTARG"; let parameter_counter+=7;;
         s) skill="$OPTARG"; let parameter_counter+=8;;
-        h) ;;
+        h) helpPanel; let parameter_counter+=99;;
     esac
 done
 
@@ -207,6 +208,8 @@ elif [ $parameter_counter -eq 8 ]; then
     getSkillMachines "$skill"
 elif [ $chivato_difficulty -eq 1 ] && [ $chivato_os -eq 1 ]; then
     getOSDifficultyMachines $difficulty $os
+elif [ $parameter_counter -eq 99 ]; then
+  helpPanel
 else
-    helpPanel
+  echo -e "\n${yellowColour}[+]${endColour}${grayColour} Utiliza ${endColour}${purpleColour}-h${endColour}${grayColour} para el panel de ayuda.${endColour}"
 fi
